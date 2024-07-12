@@ -1,0 +1,17 @@
+import java.util.*;
+class Powers
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+int num,sq,cube,fourth;
+System.out.println("Enter value:");
+num=sc.nextInt();
+sq=num*num;
+cube=num*num*num;
+fourth=num*num*num*num;
+System.out.println("Square value:"+sq);
+System.out.println("Cube value:"+cube);
+System.out.println("Fourth power:"+fourth);
+}
+}
