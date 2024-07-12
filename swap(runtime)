@@ -1,0 +1,18 @@
+import java.util.*;
+class Swap
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+int a,b;
+System.out.println("Enter A:");
+a=sc.nextInt();
+System.out.println("Enter B:");
+b=sc.nextInt();
+System.out.println("Before swapping,a="+a "and b="+b);
+a=a+b;
+b=a-b;
+a=a-b;
+System.out.println("After swapping,a="+a "and b="+b);
+}
+}
