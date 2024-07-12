@@ -1,0 +1,18 @@
+import java.util.*;
+class SimpleInterset
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+int si,p,r,t;
+System.out.println("Enter principle amount:");
+p=sc.nextInt();
+System.out.println("Enter rate:");
+r=sc.nextInt();
+System.out.println("Enter time:");
+t=sc.nextInt();
+si=(p*r*t)/100;
+System.out.println("Simple Interest"+si);
+}
+}
+ 
