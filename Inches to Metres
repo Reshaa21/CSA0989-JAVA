@@ -1,0 +1,13 @@
+import java.util.*;
+class IM
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+double inches, metres;
+System.out.println("Enter value in inches:");
+inches=sc.nextDouble();
+metres=inches*0.0254;
+System.out.println("Value in metres:"+metres);
+}
+}
