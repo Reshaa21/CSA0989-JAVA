@@ -1,0 +1,8 @@
+class Power
+{
+public static void main(String arg[])
+{
+double x=Math.max(2,5);
+System.out.println("Maximum value:"+x);
+}
+}
