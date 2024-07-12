@@ -1,0 +1,12 @@
+import java.util.*;
+class Formatter
+{
+public static void main(String arg[])
+{
+double r,area;
+r=1.2;
+area=3.14*r*r;
+System.out.println("Area of circle:"+area);
+System.out.format("Area of circle:%2f"+area);
+}
+}
