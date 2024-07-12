@@ -1,0 +1,13 @@
+import java.util.*;
+class fahrenheitcelcius
+{
+public static void main (String arg[])
+{
+Scanner sc= new Scanner(System.in);
+double F,C;
+System.out.println("enter Fahrenheit");
+F=sc.nextDouble();
+C=(F*9/5)+32;
+System.out.println("Fahrenheitcelcius"+F);
+}
+}
