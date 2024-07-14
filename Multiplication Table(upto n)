@@ -1,0 +1,16 @@
+import java.util.*;
+class MultTable
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+int i,m,n;
+System.out.println("Enter m=");
+m=sc.nextInt();
+System.out.println("Enter n=");
+n=sc.nextInt();
+for(i=1;i<=n;i++){
+System.out.println(m+"*"+i+"="+(m*i));
+}
+}
+}
