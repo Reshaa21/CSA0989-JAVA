@@ -1,0 +1,20 @@
+import java.util.*;
+class SkipNumber {
+public static void main(String arg[]) {
+Scanner sc = new Scanner(System.in);
+int m, n, k;
+System.out.println("Enter Start number, M:");
+m = sc.nextInt();
+System.out.println("Enter End number, N:");
+n = sc.nextInt();
+System.out.println("Enter skip value, K:");
+k = sc.nextInt();
+for (int i = m; i <= n; i += k) { 
+System.out.print(i); 
+if (i + k <= n) { 
+System.out.print(",");
+}
+}
+System.out.println();
+}
+}
