@@ -1,0 +1,10 @@
+class celsiustofahrenheit 
+{
+public static void main(String arg[])
+{
+double F,C;
+C=10;
+F = (C * 9/5) + 32;
+System.out.println(" celsiustofahrenheit "+F);
+}
+}
