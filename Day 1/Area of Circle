@@ -1,0 +1,10 @@
+class AreaofCricle
+{
+public static void main(String arg[])
+{
+double r, area;
+r=5;
+area=3.14*r*r;
+System.out.println("Area of circle"+area);
+}
+}
