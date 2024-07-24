@@ -1,0 +1,12 @@
+ class  FindingX {
+    public static void main(String[] args) {
+        double d = 56.778;
+        int I = 20;
+        float f = 10.5f; // Note: Use 'f' to specify a float literal
+
+        // Calculate X
+        double X = d + I + f;
+
+        System.out.println("Value of X = " + X);
+    }
+}
