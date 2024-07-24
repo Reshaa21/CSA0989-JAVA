@@ -1,0 +1,27 @@
+class PowerSqrtLogExample {
+    public static void main(String[] args) {
+        // Calculate power: 5^6
+        int base = 5;
+        int exponent = 6;
+        int powerResult = calculatePower(base, exponent);
+        System.out.println(base + "^" + exponent + " = " + powerResult);
+
+        // Calculate square root: sqrt(45)
+        double number = 45;
+        double sqrtResult = Math.sqrt(number);
+        System.out.println("Square root of " + number + " = " + sqrtResult);
+
+        // Calculate natural logarithm: log(1)
+        double logResult = Math.log(1);
+        System.out.println("Natural logarithm of 1 = " + logResult);
+    }
+
+    // Function to calculate N raised to the power P
+    static int calculatePower(int base, int exponent) {
+        if (exponent == 0) {
+            return 1;
+        } else {
+            return base * calculatePower(base, exponent - 1);
+        }
+    }
+}
