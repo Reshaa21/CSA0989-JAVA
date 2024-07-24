@@ -1,0 +1,30 @@
+import java.util.*;
+
+ class EvenSumOfFibonacci {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the value of N: ");
+        int N = scanner.nextInt();
+
+       
+        int[] fibonacci = new int[2 * N + 1];
+        fibonacci[0] = 0;
+        fibonacci[1] = 1;
+
+       
+        for (int i = 2; i <= 2 * N; i++) {
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+        }
+
+        
+        int evenSum = 0;
+        for (int i = 0; i <= 2 * N; i += 2) {
+            evenSum += fibonacci[i];
+        }
+
+        System.out.println("Even sum of Fibonacci series till number " + N + " is " + evenSum);
+
+        scanner.close();
+    }
+}
