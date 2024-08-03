@@ -1,0 +1,62 @@
+import java.util.*;
+class Smartsignal
+ {
+     String name;
+     int greenTime;
+     int redTime;
+
+   Smartsignal(String x) {
+        name = x;
+        greenTime = 30;
+        redTime = 30;
+    }
+     void timing(int Density) {
+        if (Density > 100) {
+            greenTime = 45;
+            redTime = 15;
+        } else if (Density > 50) {
+            greenTime = 35;
+            redTime = 25;
+        } else {
+            greenTime = 30;
+            redTime = 30;
+        }
+    }
+   void dispTiming() {
+        System.out.println("Traffic Signal"+name);
+        System.out.println("Green Time:"+greenTime+"seconds");
+        System.out.println("Red Time:"+redTime+"seconds");
+    }
+}
+class Traffic{
+   Random random;
+
+     Traffic() {
+        random = new Random();
+    }
+
+     int getTraffic() {
+        return random.nextInt(150);
+    }
+}
+ class Trafficsignal
+{
+    public static void main(String[] args)
+ {
+        Smartsignal sig1 = new Smartsignal("Signal 1");
+        Smartsignal sig2 = new Smartsignal("Signal 2");
+        Traffic sensor = new Traffic();
+        for (int i=0;i<5;i++) {
+            int den1 = sensor.getTraffic();
+            int den2 = sensor.getTraffic();
+            System.out.println("Cycle"+(i + 1));
+            System.out.println("Traffic Density at Signal 1:"+den1);
+            System.out.println("Traffic Density at Signal 2:"+den2);
+            sig1.timing(den1);
+            sig2.timing(den2);
+            sig1.dispTiming();
+            sig2.dispTiming();
+            System.out.println();
+        }
+    }
+}
